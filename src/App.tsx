@@ -2,8 +2,8 @@ import "./App.css";
 import { useRoutes } from "react-router";
 import Home from "./home/Home";
 import NotFound from "./components/errors/NotFound";
-import Users from "./components/users/Users";
-import Profile from "./components/users/Profile";
+import Users from "./users/Users";
+import Profile from "./users/Profile";
 
 export default function App() {
   const routes = useRoutes([

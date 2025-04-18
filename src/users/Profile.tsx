@@ -1,6 +1,6 @@
 import { useParams } from "react-router";
-import useGet from "../hooks/useGet";
-import { User } from "../types/user";
+import useGet from "../components/hooks/useGet";
+import { User } from "../components/types/user";
 
 export default function Profile() {
   const { id } = useParams();

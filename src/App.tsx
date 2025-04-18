@@ -1,9 +1,10 @@
-import "./App.css";
 import { useRoutes } from "react-router";
-import Home from "./home/Home";
+import "./App.css";
+import Login from "./auth/Login";
 import NotFound from "./components/errors/NotFound";
-import Users from "./users/Users";
+import Home from "./home/Home";
 import Profile from "./users/Profile";
+import Users from "./users/Users";
 
 export default function App() {
   const routes = useRoutes([
@@ -14,6 +15,10 @@ export default function App() {
         {
           path: "/users",
           Component: Users,
+        },
+        {
+          path: "/login",
+          Component: Login,
         },
         {
           path: "/users/:id",
